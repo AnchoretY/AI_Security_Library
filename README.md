@@ -101,9 +101,9 @@ Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博
 
 ​	兜哥写的一篇关于**HMM用于Web参数异常检测**的一篇论述性的文章，并附带了一些基本实现。HMM应用于Web参数异常检测核心思想为使用大量白样本构建HMM模型，使模型能够正确识别正常参数的形式，然后对于新的请求参数使用该HMM模型进行判别，根据得出的概率值判断是否为异常参数。在实际使用中存在的问题也比较明显，**HMM模型要每个URL都要训练一个HMM模型，因此检测的成本巨大，只能用于小站点的防护。**
 
-###Paper
+#### Paper
 
-1. Davide, Ariu, and, et al. "HMMPayl: An intrusion detection system based on Hidden Markov Models[J]"[[pdf]([http://www.covert.io/research-papers/security/HMMPayl%20-%20An%20intrusion%20detection%20system%20based%20on%20Hidden%20Markov%20Models.pdf](http://www.covert.io/research-papers/security/HMMPayl - An intrusion detection system based on Hidden Markov Models.pdf))].**(HMM用于Web参数检测**)
+1. Davide, Ariu, and, et al. "HMMPayl: An intrusion detection system based on Hidden Markov Models[J]" [pdf](http://www.covert.io/research-papers/security/HMMPayl%20-%20An%20intrusion%20detection%20system%20based%20on%20Hidden%20Markov%20Models.pdf](http://www.covert.io/research-papers/security/HMMPayl - An intrusion detection system based on Hidden Markov Models.pdf)).**(HMM用于Web参数检测**)
 
 2. 
 
