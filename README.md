@@ -1,6 +1,6 @@
 AI_And_Web_Security_Library
 
-Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博客、项目、数据等
+&emsp;&emsp;Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博客、项目、数据等
 
 ## 资料
 
@@ -10,23 +10,23 @@ Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博
 
 
 
-## Webshell 
+## Webshell
 
 ### 项目
 
 #### 1. [WebShell-Detector](https://github.com/flykingmz/WebShell-Detector)
 
- &emsp;全称《基于深度学习与集成学习的可配置webshell检测系统》，是08年大学生信息安全竞赛的一个Webshell检测系统，主要是是**针对Webshell文件**进行检测，采用的方式基本上是比较传统的**静态检测（正则+机器学习）+动态检测技术（深度学习）**的进行检测，然后使用**加权的方式对模型进行组合**，是一个比较基础的实现。
+ &emsp;&emsp;全称《基于深度学习与集成学习的可配置webshell检测系统》，是08年大学生信息安全竞赛的一个Webshell检测系统，主要是是**针对Webshell文件**进行检测，采用的方式基本上是比较传统的**静态检测（正则+机器学习）+动态检测技术（深度学习）**的进行检测，然后使用**加权的方式对模型进行组合**，是一个比较基础的实现。
 
 2. #### [CloudWalker](https://github.com/chaitin/cloudwalker)
 
- &emsp;**长亭科技在线的Webshell文件检测项目**，可以本地检测也可以线上检测。
+ &emsp;&emsp;**长亭科技在线的Webshell文件检测项目**，可以本地检测也可以线上检测。
 
 ### 数据集
 
 1. #### [webshell-sample](https://github.com/ysrc/webshell-sample)
 
-&emsp;各种webshell文件数据，根据webshell文件类型进行分类，量很大。
+&emsp;&emsp;各种webshell文件数据，根据webshell文件类型进行分类，量很大。
 
 
 
@@ -40,11 +40,11 @@ Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博
 
 1. #### [xss_payload_2016](https://github.com/7ioSecurity/XSS-Payloads)
 
-&emsp;纯xss payload总结，不带任何其他信息
+&emsp;&emsp;纯xss payload总结，不带任何其他信息
 
 2. #### [xssdb](http://xssdb.net/)
 
-&emsp;一个xss payload网络数据库，数据量比较大而且除payload外，还包含了每条payload的相关信息，例如注入名称、描述等，并支持以csv、txt、json等多种形式进行导出。
+&emsp;&emsp;一个xss payload网络数据库，数据量比较大而且除payload外，还包含了每条payload的相关信息，例如注入名称、描述等，并支持以csv、txt、json等多种形式进行导出。
 
 ### 检测规则
 
@@ -67,11 +67,11 @@ Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博
 
 1. #### [Seq2Seq for Web Attack Detection](https://github.com/flykingmz/seq2seq-web-attack-detection)
 
-  &emsp;使用某银行应用中的数据集进行HTTP Web攻击检测模型项目。该项目检测对象为**HTTP流量**，具有的一个比较特别的点是在**训练阶段不使用攻击样本，而只使用正常样本**，是一种类似异常检测思路，而不是大部分人使用的分类的方式。
+  &emsp;&emsp;使用某银行应用中的数据集进行HTTP Web攻击检测模型项目。该项目检测对象为**HTTP流量**，具有的一个比较特别的点是在**训练阶段不使用攻击样本，而只使用正常样本**，是一种类似异常检测思路，而不是大部分人使用的分类的方式。
 
 2. #### [Sharly](https://github.com/SparkSharly/Sharly)
 
-  &emsp;**基于HMM的Web异常参数检测项目**。
+  &emsp;&emsp;**基于HMM的Web异常参数检测项目**。
 
 
 
@@ -79,27 +79,27 @@ Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博
 
 1. ####  [Vulnbank_dataset](https://github.com/AnchoretY/AI_And_Web_Security_Library/tree/master/dataset/vulnbank_dataset)
 
-   &emsp;KDD大赛的一个竞赛项目，主要目的是使用机器学习得手段建立一个入侵检测器。其中的入侵行为主要包括：DDOS、密码暴力破解、缓冲区溢出、扫描等多种攻击行为。**数据格式为一些基本的统计信息**。
+   &emsp;&emsp;KDD大赛的一个竞赛项目，主要目的是使用机器学习得手段建立一个入侵检测器。其中的入侵行为主要包括：DDOS、密码暴力破解、缓冲区溢出、扫描等多种攻击行为。**数据格式为一些基本的统计信息**。
 
 2. #### [KDD CUP 1999 Data]()
 
 3. #### [SecRepo.com](https://www.secrepo.com/)
 
-&emsp;一个总结各种与安全数据相关的数据集的网站。**数据格式也非常多样**。
+&emsp;&emsp;一个总结各种与安全数据相关的数据集的网站。**数据格式也非常多样**。
 
 ### Blog
 
 1. #### [Web日志安全分析系统实践](https://xz.aliyun.com/t/2136#toc-110)
 
-   &emsp;该博客一个比较全面的HTTP流量日志分析系统，是一个比较详细的系统设计，检测部分包括了规则匹配、统计特征检测、机器学习检测三种方法，**机器学习部分采用了tf-idf+ngram等方式进行向量化然后使用SVM进行检测**。是一种非常基础非常简单的安全和AI结合的实践。
+   &emsp;&emsp;该博客一个比较全面的HTTP流量日志分析系统，是一个比较详细的系统设计，检测部分包括了规则匹配、统计特征检测、机器学习检测三种方法，**机器学习部分采用了tf-idf+ngram等方式进行向量化然后使用SVM进行检测**。是一种非常基础非常简单的安全和AI结合的实践。
 
 2. #### [数据科学在Web威胁感知中的应用](https://www.jianshu.com/p/942d1beb7fdd)
 
-   &emsp;楚安大佬在AI安全领域的一篇非常经典的博客。
+   &emsp;&emsp;楚安大佬在AI安全领域的一篇非常经典的博客。
 
 3. #### [学点算法搞安全之HMM](https://www.freebuf.com/column/132796.html)
 
-   &emsp;兜哥写的一篇关于**HMM用于Web参数异常检测**的一篇论述性的文章，并附带了一些基本实现。HMM应用于Web参数异常检测核心思想为使用大量白样本构建HMM模型，使模型能够正确识别正常参数的形式，然后对于新的请求参数使用该HMM模型进行判别，根据得出的概率值判断是否为异常参数。在实际使用中存在的问题也比较明显，**HMM模型要每个URL都要训练一个HMM模型，因此检测的成本巨大，只能用于小站点的防护。**
+   &emsp;&emsp;兜哥写的一篇关于**HMM用于Web参数异常检测**的一篇论述性的文章，并附带了一些基本实现。HMM应用于Web参数异常检测核心思想为使用大量白样本构建HMM模型，使模型能够正确识别正常参数的形式，然后对于新的请求参数使用该HMM模型进行判别，根据得出的概率值判断是否为异常参数。在实际使用中存在的问题也比较明显，**HMM模型要每个URL都要训练一个HMM模型，因此检测的成本巨大，只能用于小站点的防护。**
 
 4. #### [机器学习在Web攻击检测中的应用](https://mp.weixin.qq.com/s/Fuu70rPWyYP5mQSOK3J9_Q)
 
