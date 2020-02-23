@@ -1,6 +1,6 @@
 AI_And_Web_Security_Library
 
-&emsp;&emsp;Ai与Web安全相关资料的总结库，包括认为写的比较好的一些博客、项目、数据等
+&emsp;&emsp;Ai与Web安全相关资料的总结库，并附上自身对各个资料内容的总结与看法，不定期更新。
 
 ## 资料
 
@@ -115,13 +115,15 @@ AI_And_Web_Security_Library
 
       &emsp;&emsp;阿里cdxy大神关于阿里巴巴在将数据分析技术应用到企业安全中的一些思路的分享ppt，里面有一些做法还是比较特别的。
 
+      - **多层日志进行协同**进行是否**成功入侵判别**。
+      - **多层日志协同**进行自动化事件完整过程建模，快速追踪（**入侵链路可视化**）。
+      - **随着数据的积累，安全数据分析将基于图结构的高级知识表达方式发展**。
+
 ### Paper
 
 1. Davide, Ariu, and, et al. "HMMPayl: An intrusion detection system based on Hidden Markov Models[J]" [pdf](https://www.sciencedirect.com/science/article/pii/S0167404811000022).**(HMM用于Web参数检测**)
 
    
-
-
 
 ## 渗透测试
 
