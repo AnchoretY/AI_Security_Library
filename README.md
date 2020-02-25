@@ -26,7 +26,29 @@ AI_And_Web_Security_Library
 
 1. #### [webshell-sample](https://github.com/ysrc/webshell-sample)
 
-&emsp;&emsp;各种webshell文件数据，根据webshell文件类型进行分类，量很大。
+&emsp;&emsp;各种**webshell文件数据**，根据webshell文件类型进行分类，量很大。
+
+2. 
+
+
+
+### Blog
+
+1. #### [基于机器学习的分布式webshell检测系统-特征工程](https://www.s0nnet.com/archives/fshell-feature-1)
+
+   &emsp;&emsp;该文章主要对采用机器学习方式进行Webshell检测特征选取做出了一系列的总结，包括了**基于日志、基于统计学分析、基于文件的文本属性**三个角度的特征提取过程，还是比较有借鉴意义的一篇文章，作者还提供了实现的[github](https://github.com/Lingerhk/fshell)项目，在实际使用过程中可根据实际情况进行特征的选取。其中比较有借鉴意义的特征包括：
+
+   - parameter的熵值
+   - url访问频率
+   - parameter的key出现的频率
+   - parameter的key关联的页面数
+   - 采用fuzz hashing与已知黑名单进行相似度匹配
+
+2. #### [初探机器学习检测 PHP Webshell](https://paper.seebug.org/526/)
+
+   &emsp;&emsp;对PHP Webshell使用opcode作为特征朴素贝叶斯算法进行检测，非常详细的讲解。
+
+
 
 
 
@@ -113,7 +135,7 @@ AI_And_Web_Security_Library
 
 5. #### [企业安全数据分析实践与思考]()
 
-      &emsp;&emsp;阿里cdxy大神关于阿里巴巴在将数据分析技术应用到企业安全中的一些思路的分享ppt，里面有一些做法还是比较特别的。
+      &emsp;&emsp;阿里cdxy大神关于阿里巴巴在将数据分析技术应用到企业安全中的一些思路的分享ppt，配套讲解[视频](https://live.freebuf.com/detail/c5e504cf96a4e1826a609553bf6054f9)。里面有一些做法还是比较特别的。
 
       - **多层日志进行协同**进行是否**成功入侵判别**。
       - **多层日志协同**进行自动化事件完整过程建模，快速追踪（**入侵链路可视化**）。
@@ -143,13 +165,16 @@ AI_And_Web_Security_Library
 
 
 
-
-
-# 业务层
-
 ## UEBA
 
+1. #### [唯品会UEBA架构之路系列](https://www.secpulse.com/archives/95668.html)
 
+   ​	比较详细的描述唯品会安全团队UEBA建设的架构以及实现的一些关键点，系列包含了9篇文章，是很具有借鉴意义的系列文章。其中比较好的一些思路有：
+
+   - **域名的白名单**可以根据访问用户的数量**动态建立**，访问的用户数量很大域名加入白名单。
+   - 图算法的应用
+
+2. #### [用机器学习检测异常点击流](https://blog.csdn.net/mergerly/article/details/77985089)
 
 
 
