@@ -12,7 +12,7 @@ AI_And_Web_Security_Library
 
 ### 项目
 
-#### 1. [WebShell-Detector](https://github.com/flykingmz/WebShell-Detector)
+1. #### [WebShell-Detector](https://github.com/flykingmz/WebShell-Detector)
 
  &emsp;&emsp;全称《基于深度学习与集成学习的可配置webshell检测系统》，是08年大学生信息安全竞赛的一个Webshell检测系统，主要是是**针对Webshell文件**进行检测，采用的方式基本上是比较传统的**静态检测（正则+机器学习）+动态检测技术（深度学习）**的进行检测，然后使用**加权的方式对模型进行组合**，是一个比较基础的实现。
 
