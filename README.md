@@ -6,12 +6,6 @@ AI_And_Web_Security_Library
 
 1. [华为AI安全白皮书]https://github.com/AnchoretY/AI_And_Web_Security_Library/blob/master/book/ai-security-white-paper-cn.pdf
 
-<<<<<<< HEAD
-Test
-=======
-test
->>>>>>> 57ca981cfd048f384c5f763aa138787d3f26a79d
-
 # 网络层
 
 ## Webshell
@@ -30,9 +24,11 @@ test
 
 1. #### [webshell-sample](https://github.com/ysrc/webshell-sample)
 
-&emsp;&emsp;各种**webshell文件数据**，根据webshell文件类型进行分类，量很大。
+&emsp;&emsp;&emsp;各种**webshell文件数据**，根据webshell文件类型进行分类，量很大。
 
+2. #### [tennc/webshell](https://github.com/tennc/webshell)
 
+   &emsp;&emsp;一个比较大的的webshell文件收集项目。
 
 ### Blog
 
