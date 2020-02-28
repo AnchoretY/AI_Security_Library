@@ -6,7 +6,7 @@ AI_And_Web_Security_Library
 
 1. [华为AI安全白皮书]https://github.com/AnchoretY/AI_And_Web_Security_Library/blob/master/book/ai-security-white-paper-cn.pdf
 
-# 网络层
+
 
 ## Webshell
 
@@ -14,7 +14,7 @@ AI_And_Web_Security_Library
 
 1. #### [WebShell-Detector](https://github.com/flykingmz/WebShell-Detector)
 
- &emsp;&emsp;全称《基于深度学习与集成学习的可配置webshell检测系统》，是08年大学生信息安全竞赛的一个Webshell检测系统，主要是是**针对Webshell文件**进行检测，采用的方式基本上是比较传统的**静态检测（正则+机器学习）+动态检测技术（深度学习）**的进行检测，然后使用**加权的方式对模型进行组合**，是一个比较基础的实现。
+    &emsp;&emsp;全称《基于深度学习与集成学习的可配置webshell检测系统》，是08年大学生信息安全竞赛的一个Webshell检测系统，主要是是**针对Webshell文件**进行检测，采用的方式基本上是比较传统的**静态检测（正则+机器学习）+动态检测技术（深度学习）**的进行检测，然后使用**加权的方式对模型进行组合**，是一个比较基础的实现。
 
 2. #### [CloudWalker](https://github.com/chaitin/cloudwalker)
 
@@ -45,10 +45,6 @@ AI_And_Web_Security_Library
 2. #### [初探机器学习检测 PHP Webshell](https://paper.seebug.org/526/)
 
    &emsp;&emsp;对PHP Webshell使用opcode作为特征朴素贝叶斯算法进行检测，非常详细的讲解。
-
-
-
-
 
 ## XSS
 
@@ -136,6 +132,10 @@ AI_And_Web_Security_Library
       - **多层日志进行协同**进行是否**成功入侵判别**。
       - **多层日志协同**进行自动化事件完整过程建模，快速追踪（**入侵链路可视化**）。
       - **随着数据的积累，安全数据分析将基于图结构的高级知识表达方式发展**。
+      
+6. #### [利用机器学习检测HTTP恶意外连流量](https://www.freebuf.com/column/170483.html)
+
+      360云影实验室
 
 ### Paper
 
@@ -176,3 +176,26 @@ AI_And_Web_Security_Library
 
 
 
+## 加密流量检测
+
+### Blog
+
+1. #### [一篇报告了解国内首个针对加密流量的检测引擎](https://mp.weixin.qq.com/s/HTrQ5BK-mhXfJmMlwHD04w)
+
+   观成科技
+
+2. #### [恶意软件加密通信概要分析](https://mp.weixin.qq.com/s/8nnfSjPVmWbThKrSlqNriQ)
+
+   观成科技
+
+3. ####  [火眼金睛：利用机器学习识别加密流量中的恶意软件](https://mp.weixin.qq.com/s/qngs8-jjHVcdMco1MQfs9Q)
+
+   思科在加密流量检测中的检测方案
+
+4. #### [基于机器学习的恶意软件加密流量检测研究分享]([https://blog.riskivy.com/%E5%9F%BA%E4%BA%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E5%8A%A0%E5%AF%86%E6%B5%81%E9%87%8F%E6%A3%80%E6%B5%8B/](https://blog.riskivy.com/基于机器学习的恶意软件加密流量检测/))
+
+   斗象科技
+
+5. #### [特征工程之加密流量安全检测](https://www.secrss.com/articles/12415)
+
+   
