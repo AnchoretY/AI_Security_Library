@@ -2,6 +2,12 @@ AI_And_Web_Security_Library
 
 &emsp;&emsp;Ai与Web安全相关资料的总结库，并附上自身对各个资料内容的总结与看法，不定期更新。
 
+## 近期更新
+&emsp;&emsp;[WAF建设运营及AI应用实践](https://mp.weixin.qq.com/s?__biz=MjM5NzE1NjA0MQ==&mid=2651199346&idx=1&sn=99f470d46554149beebb8f89fbcb1578&chksm=bd2cf2d48a5b7bc2b3aecb501855cc2efedc60f6f01026543ac2df5fa138ab2bf424fc5ab2b0&scene=21#wechat_redirect)
+
+&emsp;&emsp;[门神WAF众测总结](https://mp.weixin.qq.com/s/w5TwFl4Ac1jCTX0A1H_VbQ)
+
+
 ## 资料
 
 1. [华为AI安全白皮书]https://github.com/AnchoretY/AI_And_Web_Security_Library/blob/master/book/ai-security-white-paper-cn.pdf
@@ -136,6 +142,11 @@ AI_And_Web_Security_Library
 6. #### [利用机器学习检测HTTP恶意外连流量](https://www.freebuf.com/column/170483.html)
 
       360云影实验室
+      
+7. #### [WAF建设运营及AI应用实践](https://mp.weixin.qq.com/s?__biz=MjM5NzE1NjA0MQ==&mid=2651199346&idx=1&sn=99f470d46554149beebb8f89fbcb1578&chksm=bd2cf2d48a5b7bc2b3aecb501855cc2efedc60f6f01026543ac2df5fa138ab2bf424fc5ab2b0&scene=21#wechat_redirect)
+  &emsp;&emsp;本文较为透彻的讲解了腾讯在进行WAF建设的思路、部署位置等，并且讲述了AI在整个WAF系统中所起的作用。其中比较记忆深刻的点：1.在流量到来时，应当使用多种方式来对流量进行初筛，流量中正常流量与恶意流量的比例为10000：1，应当先过滤掉绝对正常的流量。提到的方法为：先过滤掉公司自己的出口IP，再过敏感攻击特征关键字进行字符串匹配，筛选出疑似流量。   2.对于xss这类语法较为明显的攻击，采用**antlr4**作为词法分析器和文法分析器进行分析，判断是否符合语法。   3.对于判断符合js语法的请求进一步使用hmm来进行打分，判断是否为xss攻击
+  
+ 8. #### [门神WAF众测总结](https://mp.weixin.qq.com/s/w5TwFl4Ac1jCTX0A1H_VbQ)
 
 ### Paper
 
