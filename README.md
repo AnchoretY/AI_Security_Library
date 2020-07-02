@@ -149,7 +149,7 @@ AI_And_Web_Security_Library
 7. #### [WAF建设运营及AI应用实践](https://mp.weixin.qq.com/s?__biz=MjM5NzE1NjA0MQ==&mid=2651199346&idx=1&sn=99f470d46554149beebb8f89fbcb1578&chksm=bd2cf2d48a5b7bc2b3aecb501855cc2efedc60f6f01026543ac2df5fa138ab2bf424fc5ab2b0&scene=21#wechat_redirect)
   &emsp;&emsp;本文较为透彻的讲解了**腾讯在进行WAF建设的思路、部署位置等，并且讲述了AI在整个WAF系统中所起的作用**。其中比较记忆深刻的点：1.在流量到来时，应当使用多种方式来对流量进行初筛，流量中正常流量与恶意流量的比例为10000：1，应当**先过滤掉绝对正常的流量**。提到的方法为：先过滤掉公司自己的出口IP，再过敏感攻击特征关键字进行字符串匹配，筛选出疑似流量。   2.对于xss这类语法较为明显的攻击，采用**antlr4**作为词法分析器和文法分析器进行分析，判断是否符合语法。   3.**对于判断符合js语法的请求进一步使用hmm来进行打分，判断是否为xss攻击**
   
- 8. #### [门神WAF众测总结](https://mp.weixin.qq.com/s/w5TwFl4Ac1jCTX0A1H_VbQ)
+8. #### [门神WAF众测总结](https://mp.weixin.qq.com/s/w5TwFl4Ac1jCTX0A1H_VbQ)
    &emsp;&emsp;**腾讯门神WAF进一步完善的一个众测策略，比较有借鉴意义的一个WAF完善方式**。文章中比较详细的分析了整个众测过程中成功绕过门神WAF的各种攻击，对这些攻击按照攻击所**针对防御策略预处理阶段、词法分析阶段、语法分析等不同阶段进行分析**，但是并为直接给出完善措施，需要自己去思考。
 
 ### Paper
