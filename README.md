@@ -12,6 +12,9 @@ AI_And_Web_Security_Library
 #### 2020.7.15
 &emsp;&emsp;[基于PU-Learning的恶意URL检测](https://xz.aliyun.com/t/2190)
 
+#### 2020.7.16
+&emsp;&emsp;[在网络安全领域应用机器学习的困难和对策](https://www.freebuf.com/articles/neopoints/234939.html) `待更新`
+
 
 
 ## 资料
