@@ -17,6 +17,7 @@ AI_And_Web_Security_Library
 
 #### 2020.7.17
 &emsp;&emsp;[机器学习与威胁情报的融合：一种基于AI检测恶意域名的方法](https://www.freebuf.com/articles/es/187451.html)
+&emsp;&emsp;[AI in WAF | 腾讯云网站管家 WAF AI 引擎实践](https://www.freebuf.com/articles/web/179436.html)
 
 
 
