@@ -16,7 +16,7 @@ AI_And_Web_Security_Library
 &emsp;&emsp;[在网络安全领域应用机器学习的困难和对策](https://www.freebuf.com/articles/neopoints/234939.html) `待更新`
 
 #### 2020.7.17
-&emsp;&emsp;[机器学习与威胁情报的融合：一种基于AI检测恶意域名的方法](https://www.freebuf.com/articles/es/187451.html)
+&emsp;&emsp;[机器学习与威胁情报的融合：一种基于AI检测恶意域名的方法](https://www.freebuf.com/articles/es/187451.html)  
 &emsp;&emsp;[AI in WAF | 腾讯云网站管家 WAF AI 引擎实践](https://www.freebuf.com/articles/web/179436.html)
 
 
@@ -166,6 +166,9 @@ AI_And_Web_Security_Library
    
 9. #### [基于PU-Learning的恶意URL检测](https://xz.aliyun.com/t/2190)
     &emsp;&emsp;蚂蚁金服在研究**只有少量已经标注的正样本和大量无标注样本时**，使用PU-Learning（Positive Unlabled Learning）进行恶意URL检测的原理、效果介绍。**核心**就是其中PU-Learning的具体做法，使用**two-stage strategy**（两个阶段，先进行训练模型，然后根据已有数据找阈值将数据进行标注）和**cost-sensitive strategy**（正例与负例误分类采用不同惩罚系数的损失函数），声称已经通过这个模型发现了新的攻击模式，值得尝试一下的策略。
+    
+9. #### [AI in WAF | 腾讯云网站管家 WAF AI 引擎实践](https://www.freebuf.com/articles/web/179436.html)
+  &emsp;&emsp;腾讯网站管家WAF在AI WAF方向的实践经验，本文不包含一些具体的技术细节，主要是构建AI WAF的一些大体思路。1.提出降低漏报、误报的思路：two-stage法，第一阶段使用无监督的聚类来进行异常检测（声称可以实时，但是聚类如何进行实时，推测是一个准实时的算法），然第二阶段使用监督学习的方式来将第一阶段监测为异常的作为黑样本数据来进行模型训练。    
 
 ### Paper
 
