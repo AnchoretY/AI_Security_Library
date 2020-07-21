@@ -19,12 +19,39 @@ AI_And_Web_Security_Library
 &emsp;&emsp;[机器学习与威胁情报的融合：一种基于AI检测恶意域名的方法](https://www.freebuf.com/articles/es/187451.html)  
 &emsp;&emsp;[AI in WAF | 腾讯云网站管家 WAF AI 引擎实践](https://www.freebuf.com/articles/web/179436.html)
 
+#### 2020.7.21
+&emsp;&emsp;【工具】[publicsuffixlist]()
+&emsp;&emsp;【工具】[Gibberish-Detector](https://github.com/rrenaud/Gibberish-Detector)
+
+
+
+
+
+
 
 
 
 ## 资料
 
 1. [华为AI安全白皮书]https://github.com/AnchoretY/AI_And_Web_Security_Library/blob/master/book/ai-security-white-paper-cn.pdf
+
+
+
+## 工具
+1. #### [Gibberish-Detector](https://github.com/rrenaud/Gibberish-Detector)
+  &emsp;&emsp;一个使用2字符级别的马尔科夫链进行乱码检测的项目，在安全领域可以使用该项目进行DGA域名检测的辅助工具。
+  
+  
+2. #### [publicsuffixlist]()
+  &emsp;&emsp;FireFox发布的共有顶级域名列表构成的列表项目，可以直接使用pip进行安装，直接输入域名，如果在官方发布的顶级域名列表中返回顶级域名，如果不在返回None。  
+  ~~~
+    from publicsuffixlist import PublicSuffixList
+    
+    psl = PublicSuffixList(accept_unknown=False)    # accept_unknown设置为False不接受不在官方列表中的顶级域名
+    
+    psl.publicsuffix("www.ssss.com")    # 返回“com”
+    psl.publicsuffix("www.ffff.sssss")  # 返回None
+  ~~~
 
 
 
