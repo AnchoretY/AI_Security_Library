@@ -1,8 +1,9 @@
 # python3
-# description: dyre dga domain gengerate function
-# tlds: ['.cc', '.ws', '.to', '.in', '.hk', '.cn', '.tk', '.so']
-# factors: time
-# example: ['a08b140bc9edfdf82326ed46a4c0208fb0.cc',
+# Author: Yhk
+# Description: dyre dga domain gengerate function
+# Tlds: ['.cc', '.ws', '.to', '.in', '.hk', '.cn', '.tk', '.so']
+# Factors: time
+# Example: ['a08b140bc9edfdf82326ed46a4c0208fb0.cc',
 #             'bf742c5783133cd2bcedd6c47d21a46d4c.ws',
 #             'c15c212f9520e83217514f3a71e50679a9.to',
 #             'dfc2f2b7dd4720596646f8d034a631cf4a.in',]
