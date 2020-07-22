@@ -1,4 +1,6 @@
-# python3
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
 # Author: Yhk
 # Description: dyre dga domain gengerate function
 # Tlds: ['.cc', '.ws', '.to', '.in', '.hk', '.cn', '.tk', '.so']
