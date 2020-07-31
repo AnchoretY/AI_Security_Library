@@ -6,6 +6,7 @@
 
 1. Hyrum S. Anderson, Jonathan Woodbridge, Bobby Filar. "DeepDGA: Adversarially-Tuned Domain Generation and Detection" [[pdf\]](https://arxiv.org/abs/1610.01969),6 Oct 2016 **(生成对抗网络，DGA检测)** 
 2. Jonathan Woodbridge, Hyrum S. Anderson, Anjum Ahuja, Daniel Grant. "Predicting Domain Generation Algorithms with Long Short-Term Memory Networks" [[pdf\]](https://arxiv.org/abs/1611.00791),2 Nov 2016 **(LSTM,DGA检测)**
+3. Manos Antonakakis, Damballa Inc. and Georgia Institute of Technology.  "From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware",2012. **(DGA,图，谱聚类)**
 
 ### Blog
 
