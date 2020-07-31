@@ -12,7 +12,7 @@
 
 3. [加密恶意流量检测](encrypted_mal_traffic_detection/encrypted_mal_traffic_detection.md)
 
-4. [入侵检测](./IDS/IDS.md)
+4. [入侵检测](./AI_IDS/AI_IDS.md)
 
 5. [UEBA](UEBA/UEBA.md)
 
