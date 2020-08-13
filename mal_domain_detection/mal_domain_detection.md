@@ -9,6 +9,8 @@
 
 ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.9ylsao9hy4l.png)
 
+4. Khalil, I., Yu, T., & Guan, B. (2016). [Discovering Malicious Domains through Passive DNS Data Graph Analysis](sci-hub.se/10.1145/2897845.2897877). Proceedings of the 11th ACM on Asia Conference on Computer and Communications Security - ASIA CCS ’16.
+![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.0jr8nz4x4pe.png)
 ### Blog
 
 #### 1. [机器学习与威胁情报的融合：一种基于AI检测恶意域名的方法](https://www.freebuf.com/articles/es/187451.html)
