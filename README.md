@@ -53,7 +53,8 @@
 &emsp;&emsp;【论文】[Manos Antonakakis, Damballa Inc. and Georgia Institute of Technology. "From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware",2012. (DGA,图，谱聚类)](https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final127.pdf)`待更新`
 
 
-
+#### 2020.8.13
+&emsp;&emsp;[DNS安全皮毛](https://xz.aliyun.com/t/5991)
 
 
 ## 资料
