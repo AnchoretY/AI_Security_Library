@@ -1,5 +1,6 @@
 ## DGA
 
+[检测方法](detection.md)
 
 ### Paper&Blog
 
