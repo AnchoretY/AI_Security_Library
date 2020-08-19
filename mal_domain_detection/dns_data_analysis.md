@@ -30,4 +30,4 @@
 
 
 ### 相关隐藏技术
-Fast-flux技术
+Fast-flux技术  https://www.freebuf.com/articles/network/136423.html
