@@ -22,11 +22,11 @@
 &emsp;&emsp;host的各个NXDomain的二级、三级域名和整个域名的交叉熵，然后分别取均值标准差，共6个特征。  
 
 ##### 3. 域名结构特征
-&emsp;&emsp;计算各个host的各个NXdomain的长度的均值、中位数、标准差、方差，四个特征。
-&emsp;&emsp;计算各个host的各个NXdomain的级别的均值、中位数、标准差、方差，四个特征。
-&emsp;&emsp;计算出现不同字符的数量。
-&emsp;&emsp;就算不同的TLD数量、.com域名下的子域名数量占中域名数量的比例,两个特征。
-&emsp;&emsp;不同TLD出现的均值、中位数、标准差，三个特征。
+&emsp;&emsp;计算各个host的各个NXdomain的长度的均值、中位数、标准差、方差，四个特征。  
+&emsp;&emsp;计算各个host的各个NXdomain的级别的均值、中位数、标准差、方差，四个特征。  
+&emsp;&emsp;计算出现不同字符的数量。  
+&emsp;&emsp;就算不同的TLD数量、.com域名下的子域名数量占中域名数量的比例,两个特征。  
+&emsp;&emsp;不同TLD出现的均值、中位数、标准差，三个特征。  
 
 
 #### Step3 使用Host与NXDomain的访问关系角度进行聚类
