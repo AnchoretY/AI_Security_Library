@@ -35,3 +35,5 @@
 2. #### [初探机器学习检测 PHP Webshell](https://paper.seebug.org/526/)
 
    &emsp;&emsp;对PHP Webshell使用opcode作为特征朴素贝叶斯算法进行检测，非常详细的讲解。
+   
+3. #### [Webshell检测——日志分析](http://www.91ri.org/14841.html)
