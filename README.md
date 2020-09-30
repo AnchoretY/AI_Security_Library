@@ -16,7 +16,7 @@
 
 5. [UEBA](UEBA/UEBA.md)
 
-6. [XSS](XSS/XSS.md)
+6. [XSS](./XSS/XSS.md)
 
 7. [渗透测试](AI_exploit/AI_exploit.md)
 
