@@ -1,6 +1,10 @@
 ## XSS
 
-###  项目
+
+
+
+1.[一次对浏览器解析和XSS的深度探究](https://www.freebuf.com/articles/web/222849.html)
+&emsp;&emsp;对于XSS攻击过程在浏览器中的处理过程做了比较深入的解析，尤其是三种编码方式对于XSS攻击混淆的作用方式分析的很清楚透彻。
 
 
 
