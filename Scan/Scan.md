@@ -23,3 +23,7 @@
 
 
 
+【参考文献】
+
+- [安全科普：Waf实现扫描器识别彻底抵挡黑客扫描- Seay](https://wooyun.js.org/drops/安全科普：Waf实现扫描器识别 彻底抵挡黑客扫描.html)
+
