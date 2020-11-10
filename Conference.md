@@ -1,6 +1,6 @@
-## 信息安全四大顶会
+# 信息安全四大顶会
 
-### usenix security
+## usenix security
 
 #### [2019]
 
@@ -13,8 +13,6 @@
 #### [2018]
 
 《Effective Detection of Multimedia Protocol Tunneling using Machine Learning》https://www.usenix.org/conference/usenixsecurity18/presentation/barradas  
-
-《The Battle for New York: A Case Study of Applied Digital Threat Modeling at the Enterprise Level》【非技术】  
 
 《SAQL: A Stream-based Query System for Real-Time Abnormal System Behavior Detection》   【非AI】  
 
@@ -62,13 +60,13 @@
 
 《Predicting Impending Exposure to Malicious Content from User Behavior》
 
-#### [2012] 
+#### [2012]
 
 《From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware 》【DGA，AI】 
 
 
 
-### CCS
+## CCS
 
 &emsp;&emsp;全称ACM Conference on Computer and Communications Security.
 
@@ -84,20 +82,42 @@
 
 《[On the Application of NLP to Discover Relationships between Malicious Network Entities](https://dl.acm.org/authorize?N697226)》【AI，NLP，恶意网络实体识别】 
 
+《Effective and Light-Weight Deobfuscation and Semantic-Aware Attack Detection for PowerShell Scripts》 【AI，树模型，Powershell脚本攻击检测】
+
+《Detecting Fake Accounts in Online Social Networks at the Time of Registrations》【AI，虚假账户检测，社交网络，图】
+
+《User Account Access Graphs》【用户账户访问图】
+
 #### [2018]
 
-《Predicting Impending Exposure to Malicious Content from User Behavior》  
+《Predicting Impending Exposure to Malicious Content from User Behavior》  【AI,用户行为，HTTP流量，主动行为，安全检测】
+
+《LEMNA: Explaining Deep Learning based Security Applications》 【AI，可解释性，AI安全应用】
 
 
 
- NDSS 
+## NDSS
+
+
 
 ​     [2016]《Discovering Malicious Domains through Passive DNS Data Graph Analysis 》                
 
 
 
+## S&P：IEEE Symposium on Security and Privacy
 
+[2019]
+
+《**Mitch: A Machine Learning Approach to the Black-Box Detection of CSRF Vulnerabilities** 》
 
 
 
 人工智能顶会1.  IJCAI               [2019]《Locate-Then-Detect: Real-time Web Attack Detection via Attention-based Deep Neural Networks》 
+
+
+
+
+
+其他
+
+《An Automated De-Obfuscation System for Malicious JavaScript》

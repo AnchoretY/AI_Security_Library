@@ -77,3 +77,7 @@
 ### Paper
 
 1. Davide, Ariu, and, et al. "HMMPayl: An intrusion detection system based on Hidden Markov Models[J]" [pdf](https://www.sciencedirect.com/science/article/pii/S0167404811000022).**(HMM用于Web参数检测**)
+
+2. AI-IDS: Application of Deep Learning to Real-Time Web Intrusion Detection【IEEE-Acess,2020】
+
+   &emsp;&emsp;2020年最新AI-IDS用于入侵检测的应用型论文，论文中**对从2017年以来对AI在IDS方向上的应用做了系统性的总结**,然后提出了作者在AI-IDS应用到实际生产环境中的方法。比较有参考意义的一篇论文。
