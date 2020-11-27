@@ -83,7 +83,13 @@
     psl.publicsuffix("www.ffff.sssss")  # 返回None
   ~~~
 
+3. #### [Log Parser](https://www.microsoft.com/en-us/download/details.aspx?id=24659)
 
+&emsp;&emsp;Log Parser是微软公司出品的日志分析工具，它功能强大，使用简单，可以分析基于文本的日志文件、XML 文件、CSV（逗号分隔符）文件，以及操作系统的事件日志、注册表、文件系统、Active Directory。它可以像使用 SQL 语句一样查询分析这些数据，甚至可以把分析结果以各种图表的形式展现出来。
 
+~~~sql
+Logparser.exe –i:EVT –o:DATAGRID "SELECT * FROM c:\xx.evtx"
+~~~
 
+&emsp;&emsp;更多的实例可以看[这里](https://mlichtenberg.wordpress.com/2011/02/03/log-parser-rocks-more-than-50-examples/)
 

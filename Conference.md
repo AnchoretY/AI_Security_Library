@@ -78,8 +78,6 @@
 
 《[Attacking Graph-based Classification via Manipulating the Graph Structure](https://dl.acm.org/authorize?N697267)》【图神经网络，AI自身安全】  
 
-《[Data Quality for Security Challenges: Case Studies of Phishing, Malware and Intrusion Detection Datasets](https://dl.acm.org/authorize?N697217)》  【AI，数据集，入侵检测，恶意软件】  
-
 《[On the Application of NLP to Discover Relationships between Malicious Network Entities](https://dl.acm.org/authorize?N697226)》【AI，NLP，恶意网络实体识别】 
 
 《Effective and Light-Weight Deobfuscation and Semantic-Aware Attack Detection for PowerShell Scripts》 【AI，树模型，Powershell脚本攻击检测】
@@ -96,19 +94,77 @@
 
 
 
+####【2017】
+
+《Neural Network-based Graph Embedding for Cross-Platform Binary Code Similarity Detection》 【AI，
+
+二进制代码相似度识别】
+
+《[Practical Attacks Against Graph-based Clustering](https://acmccs.github.io/papers/p1125-chenA.pdf)》【AI，图聚类模型，DGA，AI自身安全问题】
+
+《*Detecting Structurally Anomalous Logins Within Enterprise Networks* [[PDF\]](https://acmccs.github.io/papers/p1273-siadatiA.pdf)》【AI，异常登录检测】
+
+《*DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning* [[PDF\]](https://acmccs.github.io/papers/p1285-duA.pdf)》
+
+《*Predicting the Risk of Cyber Incidents* [[PDF\]](https://acmccs.github.io/papers/p1299-bilgeA.pdf) 》【】
+
+《*Deemon: Detecting CSRF with Dynamic Analysis and Property Graphs* [[PDF\]](https://acmccs.github.io/papers/p1757-pellegrinoA.pdf)[[Paper\]](https://arxiv.org/pdf/1708.08786.pdf) 》【AI，图算法，CSRF】
+
+《[POSTER: Neural Network-based Graph Embedding for Malicious Accounts Detection](https://dl.acm.org/doi/10.1145/3133956.3138827)》
+
+《[POSTER: A PU Learning based System for Potential Malicious URL Detection](https://dl.acm.org/doi/10.1145/3133956.3138825)》
+
 ## NDSS
 
+[2018]
 
+《Kitsune: An Ensemble of Autoencoders for Online Network Intrusion Detection.》
 
-​     [2016]《Discovering Malicious Domains through Passive DNS Data Graph Analysis 》                
+ [2016]
+
+《Discovering Malicious Domains through Passive DNS Data Graph Analysis 》                
 
 
 
 ## S&P：IEEE Symposium on Security and Privacy
 
-[2019]
+#### [2019]
 
 《**Mitch: A Machine Learning Approach to the Black-Box Detection of CSRF Vulnerabilities** 》
+
+
+
+
+
+
+
+
+
+
+
+# 其他会议
+
+#### IEEE Acess
+
+[2020]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

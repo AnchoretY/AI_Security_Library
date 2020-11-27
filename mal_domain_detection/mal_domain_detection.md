@@ -2,6 +2,66 @@
 
 [检测方法](detection.md)
 
+
+
+
+
+### URL DataSet
+
+- [*Malware Domain List*](https://www.malwaredomainlist.com/mdl.php)
+
+  提供各种类型的url数据
+
+- [*Phishtank*](钓鱼数据库)
+
+  钓鱼URL专门的开放式数据库
+
+- [Google Safe Browsing](https://safebrowsing.google.com/)
+
+  Google安全浏览器为开发者提供了API判断一个URL是否为恶意URL，免费用于非商业用途，商业用途需要交涉。
+
+-  [*VirusTotal*](https://www.virustotal.com)
+
+  Virustotal同样提供了恶意URL和恶意文件的检测服务，并返回它的检测报告。
+
+
+
+### Passive DNS Database
+
+DBDNS
+
+
+
+
+
+### Web Client Honeypots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Paper&Blog
 
 1. Hyrum S. Anderson, Jonathan Woodbridge, Bobby Filar. "DeepDGA: Adversarially-Tuned Domain Generation and Detection" [[pdf\]](https://arxiv.org/abs/1610.01969),6 Oct 2016 **(生成对抗网络，DGA检测)** 

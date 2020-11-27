@@ -78,6 +78,22 @@
 
 1. Davide, Ariu, and, et al. "HMMPayl: An intrusion detection system based on Hidden Markov Models[J]" [pdf](https://www.sciencedirect.com/science/article/pii/S0167404811000022).**(HMM用于Web参数检测**)
 
-2. AI-IDS: Application of Deep Learning to Real-Time Web Intrusion Detection【IEEE-Acess,2020】
+2. #### [AI-IDS: Application of Deep Learning to Real-Time Web Intrusion Detection](../paper/)【IEEE-Acess,2020】
 
-   &emsp;&emsp;2020年最新AI-IDS用于入侵检测的应用型论文，论文中**对从2017年以来对AI在IDS方向上的应用做了系统性的总结**,然后提出了作者在AI-IDS应用到实际生产环境中的方法。比较有参考意义的一篇论文。
+   &emsp;&emsp;2020年最新AI-IDS用于入侵检测的应用型论文，论文中**对从2017年以来对AI在IDS方向上的应用做了系统性的总结**,然后提出了作者在AI-IDS应用到实际生产环境中的方法。比较有参考意义的一篇论文。文章的主要亮点在于：1.可拓展性，能够根据需求不断进行拓展 2.应用性强  3.对以往研究的总结很全面 4.使用实例展示了AI-IDS在未知威胁检测方面的能力。
+
+   ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.zjo0ar8qmx.png)
+
+   &emsp;&emsp;文章中一些一些观点与我们在实践中的思路不谋而和：
+
+   1. AI-IDS要与传统IDS并行运行，传统IDS作为IDS的一个评判标准 
+
+   2. 在模型上线的初期，预测的结果并不可靠，需要长期维护模型达到稳定后才可以信任模型
+   3. AI-IDS产生的安全事件只保留排除掉传统IDS的那一部分，剩下的才重点研究
+   4. 固定的时间后，会根据产生的安全事件完善已有的传统IDS
+
+   &emsp;&emsp;建模过程中的一些**特殊点**：
+
+   1. 采用标准化的UTF-8编码对数据进行编码，将每个字符的表示范围控制在（-1.1）， *ys* = −(*ys* − 128)/128，据说是因为这样可以训练更加迅速
+
+   
