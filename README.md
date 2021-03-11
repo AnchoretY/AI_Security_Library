@@ -22,9 +22,49 @@
 
 8. [扫描器检测](./Scan/Scan.md)
 
-    
+9. [漏洞挖掘](.)
+
+     
 
 ## 近期更新
+
+#### 2021.3.7
+
+VulDeePecker:ADeep Learning-Based System for Vulnerability Detection.2
+
+Automated vulnerability detection in source code using deep representation learning.2018
+
+Neural network-based graph embedding for cross-platform binary code similarity detection。
+
+Modeling and discovering vulnerabilities with code property graphs.2014
+
+
+
+
+
+#### 2021.3.3
+
+[浅谈DDoS攻防对抗中的AI实践](https://security.tencent.com/index.php/blog/msg/144)
+
+[AI繁荣下的隐忧——Google Tensorflow安全风险剖析](https://security.tencent.com/index.php/blog/msg/130)
+
+
+
+#### 2021.2.25
+
+[Adversarial Malware in Machine Learning Detectors: Our MLSEC 2020’s SECRETs](https://secret.inf.ufpr.br/2020/09/29/adversarial-malware-in-machine-learning-detectors-our-mlsec-2020-secrets/#defenders)`待更新`
+
+【github】[2020 Machine Learning Security Evasion Competition](https://github.com/Azure/2020-machine-learning-security-evasion-competition)
+
+【kaggle】[Microsoft Malware Prediction](https://www.kaggle.com/c/microsoft-malware-prediction/code)
+
+
+
+#### 2021.1.25
+
+[图卷积神经网络在企业侧网络安全运营中的应用](https://mp.weixin.qq.com/s?__biz=MzIyODYzNTU2OA==&mid=2247488182&idx=1&sn=c94808f60a30779d414d85aa07a10e8a&chksm=e84fb469df383d7f4f9f76b42b618bef698bf37b022f7eec5e1bcf91ed61fc1c6c0a38bcfac7&scene=21#wechat_redirect)
+
+[基于机器学习的敏感信息泄露治理探索](https://mp.weixin.qq.com/s/9ZOSyPJdyxgrbsY4FIvgXw)
 
 #### 2020.12.10
 
@@ -32,11 +72,9 @@
 
 [基于机器学习的Webshell检测方法与实现（上）](https://blog.riskivy.com/基于机器学习的webshell检测方法与实现（上）/)`待更新`
 
+#### 2020.9.22
 
-
-####2020.9.22
-
-&emsp;&emsp;[Webshell检测——日志分析]（http://www.91ri.org/14841.html）`待更新`
+&emsp;&emsp;[Webshell检测——日志分析](http://www.91ri.org/14841.html)`待更新`
 
 #### 2020.7.1
 
