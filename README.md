@@ -28,6 +28,14 @@
 
 ## 近期更新
 
+#### 2021.3.11
+
+Classification of Malicious Web Code by Machine Learning - Komiya et al.
+
+SQL Injection Detection using Machine Learning
+
+SQLiGoT: Detecting SQL injection attacks using graph of tokens and SVM
+
 #### 2021.3.7
 
 VulDeePecker:ADeep Learning-Based System for Vulnerability Detection.2
@@ -37,10 +45,6 @@ Automated vulnerability detection in source code using deep representation learn
 Neural network-based graph embedding for cross-platform binary code similarity detection。
 
 Modeling and discovering vulnerabilities with code property graphs.2014
-
-
-
-
 
 #### 2021.3.3
 
