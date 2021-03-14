@@ -1,30 +1,40 @@
-**AI_And_Web_Security_Library**
+**AI_And_Security_Library**
 
-&emsp;&emsp;Ai与Web安全相关资料的总结库，并附上自身对各个资料内容的总结与看法，不定期更新。
+&emsp;&emsp;Ai与安全相关资料的总结库，并附上自身对各个资料内容的总结与看法，不定期更新。
 
 ## 分类
 
 主要关注的文章类型包括使用AI技术解决下面的安全问题:
 
-1. [Webshell](./webshell/webshell.md)
+#### AI赋能安全
 
-2. [DGA](./mal_domain_detection/mal_domain_detection.md)
+1. AI辅助防御
+   - [Web入侵检测](./AI_IDS/AI_IDS.md)
+     - [Webshell检测](./webshell/webshell.md)
+     - [XSS检测](./XSS/XSS.md)
+     - 恶意域名检测
+       - [DGA域名检测](./mal_domain_detection/mal_domain_detection.md)
+     - [加密恶意流量检测](encrypted_mal_traffic_detection/encrypted_mal_traffic_detection.md)
+     - [扫描器检测](./Scan/Scan.md)
+     - 僵尸网络检测
+   - 恶意代码
+     - 恶意软件检测
+     - [漏洞挖掘](.)
 
-3. [加密恶意流量检测](encrypted_mal_traffic_detection/encrypted_mal_traffic_detection.md)
+2. AI辅助攻击
+   - [AI辅助渗透测试](AI_exploit/AI_exploit.md)
+   - AI辅助恶意软件混淆
 
-4. [入侵检测](./AI_IDS/AI_IDS.md)
+3. 异常检测
+   - [UEBA](UEBA/UEBA.md)
 
-5. [UEBA](UEBA/UEBA.md)
+#### AI自身的安全问题
 
-6. [XSS](./XSS/XSS.md)
+1. 混淆攻击
+2. 后门攻击
+3. 模型窃取
 
-7. [渗透测试](AI_exploit/AI_exploit.md)
-
-8. [扫描器检测](./Scan/Scan.md)
-
-9. [漏洞挖掘](.)
-
-     
+  
 
 ## 近期更新
 
@@ -121,10 +131,10 @@ Modeling and discovering vulnerabilities with code property graphs.2014
 
 ## 工具
 1. #### [Gibberish-Detector](https://github.com/rrenaud/Gibberish-Detector)
-  &emsp;&emsp;一个使用2字符级别的马尔科夫链进行乱码检测的项目，在安全领域可以使用该项目进行DGA域名检测的辅助工具。
+    &emsp;&emsp;一个使用2字符级别的马尔科夫链进行乱码检测的项目，在安全领域可以使用该项目进行DGA域名检测的辅助工具。
   
 2. #### [publicsuffixlist]()
-  &emsp;&emsp;FireFox发布的共有顶级域名列表构成的列表项目，可以直接使用pip进行安装，直接输入域名，如果在官方发布的顶级域名列表中返回顶级域名，如果不在返回None。  
+    &emsp;&emsp;FireFox发布的共有顶级域名列表构成的列表项目，可以直接使用pip进行安装，直接输入域名，如果在官方发布的顶级域名列表中返回顶级域名，如果不在返回None。  
   ~~~
     from publicsuffixlist import PublicSuffixList
     
