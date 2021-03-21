@@ -9,24 +9,24 @@
 #### AI赋能安全
 
 1. AI辅助防御
-   - [Web入侵检测](./AI_IDS/AI_IDS.md)
-     - [Webshell检测](./webshell/webshell.md)
-     - [XSS检测](./XSS/XSS.md)
+   - [Web入侵检测](./AI_to_Sec/AI_to_defense/Web/AI_IDS.md)
+     - [Webshell检测](./AI_to_Sec/AI_to_defense/Web/webshell.md)
+     - [XSS检测](./AI_to_Sec/AI_to_defense/Web/XSS.md)
      - 恶意域名检测
-       - [DGA域名检测](./mal_domain_detection/mal_domain_detection.md)
-     - [加密恶意流量检测](encrypted_mal_traffic_detection/encrypted_mal_traffic_detection.md)
-     - [扫描器检测](./Scan/Scan.md)
+       - [DGA域名检测](./AI_to_Sec/AI_to_defense/Web/mal_domain_detection/mal_domain_detection.md)
+     - [加密恶意流量检测](./AI_to_Sec/AI_to_defense/Web/encrypted_mal_traffic_detection/encrypted_mal_traffic_detection.md)
+     - [扫描器检测](./AI_to_Sec/AI_to_defense/Web/Scan.md)
      - 僵尸网络检测
    - 恶意代码
      - 恶意软件检测
-     - [漏洞挖掘](.)
 
 2. AI辅助攻击
-   - [AI辅助渗透测试](AI_exploit/AI_exploit.md)
-   - AI辅助恶意软件混淆
+   - [AI辅助渗透测试](./AI_to_Sec/AI_attack/AI_exploit.md)
+   - [漏洞挖掘](./AI_to_Sec/AI_attack/AI_Vulnerability_Mining.md)
+   - [AI辅助恶意软件混淆](./AI_to_Sec/AI_attack/AI_mal_evasion.md)
 
 3. 异常检测
-   - [UEBA](UEBA/UEBA.md)
+   - [UEBA](./AI_to_Sec/AI_to_OD/UEBA.md)
 
 #### AI自身的安全问题
 
@@ -48,7 +48,7 @@ SQLiGoT: Detecting SQL injection attacks using graph of tokens and SVM
 
 #### 2021.3.7
 
-VulDeePecker:ADeep Learning-Based System for Vulnerability Detection.2
+VulDeePecker:ADeep Learning-Based System for Vulnerability Detection.
 
 Automated vulnerability detection in source code using deep representation learning.2018
 
@@ -61,8 +61,6 @@ Modeling and discovering vulnerabilities with code property graphs.2014
 [浅谈DDoS攻防对抗中的AI实践](https://security.tencent.com/index.php/blog/msg/144)
 
 [AI繁荣下的隐忧——Google Tensorflow安全风险剖析](https://security.tencent.com/index.php/blog/msg/130)
-
-
 
 #### 2021.2.25
 
@@ -111,7 +109,7 @@ Modeling and discovering vulnerabilities with code property graphs.2014
 
 &emsp;&emsp;【工具】[publicsuffixlist]()
 &emsp;&emsp;【工具】[Gibberish-Detector](https://github.com/rrenaud/Gibberish-Detector)  
-&emsp;&emsp;[使用社区发现算法从企业内部无效域名中挖掘DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%A4%BE%E5%8C%BA%E5%8F%91%E7%8E%B0%E7%AE%97%E6%B3%95%E4%BB%8E%E4%BC%81%E4%B8%9A%E5%86%85%E9%83%A8%E6%97%A0%E6%95%88%E5%9F%9F%E5%90%8D%E4%B8%AD%E6%8C%96%E6%8E%98DGA/) `待更新`
+&emsp;&emsp;【DGA域名检测】[使用社区发现算法从企业内部无效域名中挖掘DGA](http://webber.tech/posts/%E4%BD%BF%E7%94%A8%E7%A4%BE%E5%8C%BA%E5%8F%91%E7%8E%B0%E7%AE%97%E6%B3%95%E4%BB%8E%E4%BC%81%E4%B8%9A%E5%86%85%E9%83%A8%E6%97%A0%E6%95%88%E5%9F%9F%E5%90%8D%E4%B8%AD%E6%8C%96%E6%8E%98DGA/) 
 
 
 #### 2020.7.31

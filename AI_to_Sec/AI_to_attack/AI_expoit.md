@@ -4,23 +4,13 @@
 
 ### Blog
 
-1. **[AAAI-20论文解读：基于图神经网络的二进制代码分析](https://keenlab.tencent.com/zh/2019/12/10/Tencent-Keen-Security-Lab-Order-Matters/)**
-
-   科恩实验室在使用图神经网络进行大规模二进制代码相似性分析的成果，发布在人工智能顶级会议AIII-20上。
-
 2. [Automatic Generation of Injection Codes using Genetic Algorithm](https://www.mbsd.jp/blog/20170921.html)
 
    日本MBSD公司使用遗传算法进行XSS注入攻击。
 
 ### 论文
 
-1. Finding Bugs Using Your Own Code: Detecting Functionally-similar yet Inconsistent Code
-
-   *Northeastern University*使用graph-embedding对
-
-
-
-【2】[Order Matters: Semantic-Aware Neu for Binary Code Similarity Detection](https://keenlab.tencent.com/en/whitepapers/Ordermatters.pdf)
+1. 
 
 
 
@@ -64,18 +54,4 @@
 
 
 
-3. #### [Adversarial-Threat-Detector](https://github.com/gyoisamurai/Adversarial-Threat-Detector)
-
-&emsp;&emsp;2021年黑帽黑客大会上提出出的AI对抗威胁检测器，检测器主要分为下面四步：
-
-1. 检测器首先通过执行大量已知的攻击攻击待检测的分类模型，观察模型是否成功被攻击
-
-2. 对攻击攻击的情况生成脆弱性报告以及重播该漏洞的ipynb文件（供研究人员了解该漏洞）
-
-3. 自动修复（当前还是人工修复）
-
-4. 对修复漏洞后的模型重新进行检测
-
-&emsp;&emsp;目前，该工具还只支持keras的Evasion攻击。主讲人说后续会持续加入数据投毒攻击、模型投毒、模型窃取等攻击方式的检测。
-
-![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.8kp1i4nl69.png)
+3. #### 
