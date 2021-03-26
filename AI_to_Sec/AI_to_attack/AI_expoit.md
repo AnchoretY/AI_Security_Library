@@ -4,13 +4,32 @@
 
 ### Blog
 
-2. [Automatic Generation of Injection Codes using Genetic Algorithm](https://www.mbsd.jp/blog/20170921.html)
+1. [Automatic Generation of Injection Codes using Genetic Algorithm](https://www.mbsd.jp/blog/20170921.html)
 
-   日本MBSD公司使用遗传算法进行XSS注入攻击。
+日本MBSD公司使用遗传算法进行XSS注入攻击。
 
 ### 论文
 
-1. 
+1. 《The Agent Web Model—Modelling web hacking for reinforcement learning》
+2. 《Modeling penetration testing with reinforcement learning using capture-the-flag challenges and tabular Q-learning.》
+3. 《Reinforcement learning for efficient network penetration testing.》
+4. 《Adversarial reinforcement learning in a cyber security simulation》2018 博士论文
+5. 《Using Markov decision processes and reinforcement learning to guide penetration testers in the search for web vul- nerabilities》2019
+6. 《Smart security audit: Reinforcement learning with a deep neural network approximator.》2020
+7. 《Reinforcement Learning for Intelligent Penetration Testing》2018
+8. 《Simulated Penetration Testing and cMitigation Analysis》
+9. 《Automated penetration testing based on a threat model》2016 
+10. 《Attack planning in the real world》 2013
+
+11. 《Automatic generation algorithm of penetration graph inpenetration testing》2014 攻击图决策树
+
+
+
+### 相关竞赛
+
+1. **Cyber Grand Challenge Event  2016**  **DARPA**
+
+
 
 
 
@@ -48,10 +67,10 @@
 
 5. #### [WAF Evasion Environment for OpenAI Gym](https://github.com/SaneBow/gym-waf)
 
-&emsp;&emsp;使用强化学习来混淆xss payload使其能够绕过WAF检测的项目，作者的实验中可以达到40%左右的成果绕过率。
+&emsp;&emsp;使用强化学习来混淆sql payload使其能够绕过WAF检测的项目。
 
 ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.bewohm1fvh.png)
 
 
 
-3. #### 
+3. ####
