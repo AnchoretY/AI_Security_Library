@@ -74,6 +74,10 @@
 
     &emsp;&emsp;腾讯网站管家WAF在AI WAF方向的实践经验，本文不包含一些具体的技术细节，主要是构建AI WAF的一些大体思路。1.提出降低漏报、误报的思路：two-stage法，第一阶段使用无监督的聚类来进行异常检测（声称可以实时，但是聚类如何进行实时，推测是一个准实时的算法），然第二阶段使用监督学习的方式来将第一阶段监测为异常的作为黑样本数据来进行模型训练。    
 
+11. #### [Anomaly Detection through Reinforcement Learning](https://zighra.com/blogs/anomaly-detection-through-reinforcement-learning/)
+
+    &emsp;&emsp; 强化学习用于入侵检测的一篇博客，是一家智能身份认证公司博客中发出的，该文章使用openAI Gym和NSL-KDD数据进行构建了一个虚拟环境，训练强化学习系统使其能够对连接进行判断是否为攻击。其中还是存在比较明显的缺陷。首先在该文章所采用的的方法中，RL的action为对连接打正常标记与异常标记两种，而这两种action并不能对state产生任何影响，不符合一个RL系统的基本要求，因此这种建模方式十分不推荐。
+
 ### Paper
 
 1. Davide, Ariu, and, et al. "HMMPayl: An intrusion detection system based on Hidden Markov Models[J]" [pdf](https://www.sciencedirect.com/science/article/pii/S0167404811000022).**(HMM用于Web参数检测**)
@@ -96,4 +100,18 @@
 
    1. 采用标准化的UTF-8编码对数据进行编码，将每个字符的表示范围控制在（-1.1）， *ys* = −(*ys* − 128)/128，据说是因为这样可以训练更加迅速
 
-   
+
+3. #### [Use Model to Deconstruct Threats: Detect Intrusion by Statistical Learning](https://www.rsaconference.com/library/Presentation/USA/2019/use-model-to-deconstruct-threats-detect-intrusion-by-statistical-learning) **【RSA 2019】**
+
+   &emsp;&emsp;阿里云安全高级工程师周涛在RSA 2019上对入侵检测在阿里安全领域时间进行的经验分享，其中比较有趣的点在于：
+
+   - 入侵检测多阶段检测：正常流量过滤->已知威胁检测 -> 告警事件关联。
+
+   - 面对统计学习与机器学习误报的问题以及告警数据量过多的问题，提出了使用有向图进行告警关联，将告警聚合成为告警事件，方便安全运维人员进行人工核验，将告警从每天3000条下降到每天告警事件数量在100个以下。
+
+   - 使用kill Chain中不同阶段数、威胁设计的网络分布、各个告警模型的准确率进行风险评估。
+
+     ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.u36dle61yi.png)
+
+4. #### [MADE: Security Analytics for Enterprise Threat Detection](http://www.ccs.neu.edu/home/alina/papers/MADE.pdf)
+

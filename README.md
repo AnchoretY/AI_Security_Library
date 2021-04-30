@@ -1,4 +1,4 @@
-**AI_And_Security_Library**
+** AI_And_Security_Library**
 
 &emsp;&emsp;Ai与安全相关资料的总结库，并附上自身对各个资料内容的总结与看法，不定期更新。
 
@@ -30,13 +30,27 @@
 
 #### AI自身的安全问题
 
-1. 混淆攻击
-2. 后门攻击
-3. 模型窃取
+1. 对抗攻击
 
-  
+2. 后门攻击
+
+3. 数据投毒
+
+4. 模型窃取
+
+   
 
 ## 近期更新
+
+#### 2021.4.30
+
+【IDS】[Use Model to Deconstruct Threats: Detect Intrusion by Statistical Learning](AI_to_Sec/AI_to_defense/Web/AI_IDS.md) 【RSA 2019】
+
+【IDS】[MADE: Security Analytics for Enterprise Threat Detection](AI_to_Sec/AI_to_defense/Web/AI_IDS.md)`待更新`
+
+#### 2021.4.8
+
+[网络攻防新前沿：加密流量对抗](https://www.secrss.com/articles/12314)
 
 #### 2021.3.11
 
