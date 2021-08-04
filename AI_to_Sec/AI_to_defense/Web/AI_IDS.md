@@ -1,5 +1,16 @@
 ## 入侵检测
 
+- Gartner2021 Network Detection and Response市场报告
+  - [https://www.gartner.com/doc/reprints?id=1-25DOQJMT&ct=210304&st=sb]
+
+### 入侵检测基础
+
+1. #### [中传信安网络安全wiki课程—入侵检测](https://c4pr1c3.gitee.io/cuc-ns/chap0x09/main.html)
+
+   标准入侵检测的发展、意义、评价指标、关键技术、检测框架、代表应用等。
+
+   
+
 ### 项目
 
 1. #### [Seq2Seq for Web Attack Detection](https://github.com/flykingmz/seq2seq-web-attack-detection)
@@ -28,11 +39,11 @@
 
    &emsp;&emsp;该博客一个比较全面的HTTP流量日志分析系统，是一个比较详细的系统设计，检测部分包括了规则匹配、统计特征检测、机器学习检测三种方法，**机器学习部分采用了tf-idf+ngram等方式进行向量化然后使用SVM进行检测**。是一种非常基础非常简单的安全和AI结合的实践。
 
-2. #### [数据科学在Web威胁感知中的应用](https://www.jianshu.com/p/942d1beb7fdd)
+2. #### [数据科学在Web威胁感知中的应用](https://www.jianshu.com/p/942d1beb7fdd)【阿里云-楚安】
 
    &emsp;&emsp;楚安大佬在AI安全领域的一篇非常经典的博客。
 
-3. #### [学点算法搞安全之HMM](https://www.freebuf.com/column/132796.html)
+3. #### [学点算法搞安全之HMM](https://www.freebuf.com/column/132796.html)【百度-兜哥】
 
    &emsp;&emsp;兜哥写的一篇关于**HMM用于Web参数异常检测**的一篇论述性的文章，并附带了一些基本实现。HMM应用于Web参数异常检测核心思想为使用大量白样本构建HMM模型，使模型能够正确识别正常参数的形式，然后对于新的请求参数使用该HMM模型进行判别，根据得出的概率值判断是否为异常参数。在实际使用中存在的问题也比较明显，**HMM模型要每个URL都要训练一个HMM模型，因此检测的成本巨大，只能用于小站点的防护。**
 
@@ -46,7 +57,7 @@
 
    - 机器学习和正则都判为黑的发送到**自动化验证系统验证能否攻击成功**。
 
-5. #### [企业安全数据分析实践与思考]()
+5. #### [企业安全数据分析实践与思考]()【阿里-cdxy】
 
    &emsp;&emsp;阿里cdxy大神关于阿里巴巴在将数据分析技术应用到企业安全中的一些思路的分享ppt，配套讲解[视频](https://live.freebuf.com/detail/c5e504cf96a4e1826a609553bf6054f9)。里面有一些做法还是比较特别的。
 
@@ -54,23 +65,23 @@
    - **多层日志协同**进行自动化事件完整过程建模，快速追踪（**入侵链路可视化**）。
    - **随着数据的积累，安全数据分析将基于图结构的高级知识表达方式发展**。
 
-6. #### [利用机器学习检测HTTP恶意外连流量](https://www.freebuf.com/column/170483.html)
+6. #### [利用机器学习检测HTTP恶意外连流量](https://www.freebuf.com/column/170483.html)【360云影实验室】
 
    360云影实验室
 
-7. #### [WAF建设运营及AI应用实践](https://mp.weixin.qq.com/s?__biz=MjM5NzE1NjA0MQ==&mid=2651199346&idx=1&sn=99f470d46554149beebb8f89fbcb1578&chksm=bd2cf2d48a5b7bc2b3aecb501855cc2efedc60f6f01026543ac2df5fa138ab2bf424fc5ab2b0&scene=21#wechat_redirect)
+7. #### [WAF建设运营及AI应用实践](https://mp.weixin.qq.com/s?__biz=MjM5NzE1NjA0MQ==&mid=2651199346&idx=1&sn=99f470d46554149beebb8f89fbcb1578&chksm=bd2cf2d48a5b7bc2b3aecb501855cc2efedc60f6f01026543ac2df5fa138ab2bf424fc5ab2b0&scene=21#wechat_redirect)【腾讯】
 
    &emsp;&emsp;本文较为透彻的讲解了**腾讯在进行WAF建设的思路、部署位置等，并且讲述了AI在整个WAF系统中所起的作用**。其中比较记忆深刻的点：1.在流量到来时，应当使用多种方式来对流量进行初筛，流量中正常流量与恶意流量的比例为10000：1，应当**先过滤掉绝对正常的流量**。提到的方法为：先过滤掉公司自己的出口IP，再过敏感攻击特征关键字进行字符串匹配，筛选出疑似流量。   2.对于xss这类语法较为明显的攻击，采用**antlr4**作为词法分析器和文法分析器进行分析，判断是否符合语法。   3.**对于判断符合js语法的请求进一步使用hmm来进行打分，判断是否为xss攻击**
 
-8. #### [门神WAF众测总结](https://mp.weixin.qq.com/s/w5TwFl4Ac1jCTX0A1H_VbQ)
+8. #### [门神WAF众测总结](https://mp.weixin.qq.com/s/w5TwFl4Ac1jCTX0A1H_VbQ)【腾讯】
 
    &emsp;&emsp;**腾讯门神WAF进一步完善的一个众测策略，比较有借鉴意义的一个WAF完善方式**。文章中比较详细的分析了整个众测过程中成功绕过门神WAF的各种攻击，对这些攻击按照攻击所**针对防御策略预处理阶段、词法分析阶段、语法分析等不同阶段进行分析**，但是并为直接给出完善措施，需要自己去思考。
 
-9. #### [基于PU-Learning的恶意URL检测](https://xz.aliyun.com/t/2190)
+9. #### [基于PU-Learning的恶意URL检测](https://xz.aliyun.com/t/2190)【蚂蚁】
 
    &emsp;&emsp;蚂蚁金服在研究**只有少量已经标注的正样本和大量无标注样本时**，使用PU-Learning（Positive Unlabled Learning）进行恶意URL检测的原理、效果介绍。**核心**就是其中PU-Learning的具体做法，使用**two-stage strategy**（两个阶段，先进行训练模型，然后根据已有数据找阈值将数据进行标注）和**cost-sensitive strategy**（正例与负例误分类采用不同惩罚系数的损失函数），声称已经通过这个模型发现了新的攻击模式，值得尝试一下的策略。
 
-10. #### [AI in WAF | 腾讯云网站管家 WAF AI 引擎实践](https://www.freebuf.com/articles/web/179436.html)
+10. #### [AI in WAF | 腾讯云网站管家 WAF AI 引擎实践](https://www.freebuf.com/articles/web/179436.html)【腾通讯】
 
     &emsp;&emsp;腾讯网站管家WAF在AI WAF方向的实践经验，本文不包含一些具体的技术细节，主要是构建AI WAF的一些大体思路。1.提出降低漏报、误报的思路：two-stage法，第一阶段使用无监督的聚类来进行异常检测（声称可以实时，但是聚类如何进行实时，推测是一个准实时的算法），然第二阶段使用监督学习的方式来将第一阶段监测为异常的作为黑样本数据来进行模型训练。    
 
@@ -84,7 +95,7 @@
 
 2. #### [AI-IDS: Application of Deep Learning to Real-Time Web Intrusion Detection](../paper/)【IEEE-Acess,2020】
 
-   &emsp;&emsp;2020年最新AI-IDS用于入侵检测的应用型论文，论文中**对从2017年以来对AI在IDS方向上的应用做了系统性的总结**,然后提出了作者在AI-IDS应用到实际生产环境中的方法。比较有参考意义的一篇论文。文章的主要亮点在于：1.可拓展性，能够根据需求不断进行拓展 2.应用性强  3.对以往研究的总结很全面 4.使用实例展示了AI-IDS在未知威胁检测方面的能力。
+   &emsp;&emsp;2020年最新AI-IDS用于入侵检测的应用型论文，论文中**对从2017年以来对AI在IDS方向上的应用做了系统性的总结**,然后提出了作者在AI-IDS应用到实际生产环境中的方法。比较有参考意义的一论文。文章的主要亮点在于：1.可拓展性，能够根据需求不断进行拓展 2.应用性强  3.对以往研究的总结很全面 4.使用实例展示了AI-IDS在未知威胁检测方面的能力。
 
    ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.zjo0ar8qmx.png)
 
@@ -114,4 +125,20 @@
      ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.u36dle61yi.png)
 
 4. #### [MADE: Security Analytics for Enterprise Threat Detection](http://www.ccs.neu.edu/home/alina/papers/MADE.pdf)
+
+&emsp;&emsp;2018年对企业中的域名安全进行风险评估（**主要是针对C&C域名**），利用先验知识提取流量自身内部特征和外部拓展特征共89中，流量自身内部特征分为通讯特征、域名特征、URL特征、UA特征、返回码、referer特征、Content-type特征，外部特征包括WHOIS特征、Host类型特征、Geolocation特征，然后对域名为恶意域名的概率进行评估，作为其风险值。论文作者使用3个月的企业数据作为训练集，然后使用1个月的数据作为时间窗口进行统计，作为测试集，**研究人员主要人工对top100域名进行人工核验，其中97个为恶意域名，并且virtual只能发现72个**，证明系统具有较强的未知风险发现能力。
+
+![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.p6f49lget2.png)
+
+&emsp;&emsp;该论文提出的方法主要应用于企业内部，使用的比较全面的方法进行数据过滤，极大的减轻了数据的标注与处理压力，其中包含的过滤方法主要包括：
+
+- **只关注最近新出现的域名**：这种过滤方法基于三种认知，1.恶意域名大多都具有较短的生命周期 2. 长时间存在的域名大概率都已经包含在已知的威胁情报中 3. 论文更加关注新的恶意趋势
+- **域名流行度**：排除掉每天企业中访问主机数量最多的50个域名
+- **CDN域名**
+- **合法广告流量**
+- **连接量很少的域名**：改文章主要关注点在于C&C域名，因此很大程度上在一个月的时间内连接数不会少于5次
+
+
+
+
 

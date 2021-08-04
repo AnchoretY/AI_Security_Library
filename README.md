@@ -1,4 +1,4 @@
-** AI_And_Security_Library**
+# AI_And_Security_Library
 
 &emsp;&emsp;Ai与安全相关资料的总结库，并附上自身对各个资料内容的总结与看法，不定期更新。
 
@@ -42,11 +42,35 @@
 
 ## 近期更新
 
+#### 2021.5.12
+
+【入侵检测基础】[中传信安网络安全wiki课本](https://c4pr1c3.gitee.io/cuc-ns/chap0x09/main.html)
+
+【IDS】[Use Model to Deconstruct Threats: Detect Intrusion by Statistical Learning](https://published-prd.lanyonevents.com/published/rsaus19/sessionsFiles/13922/AIR-F01-Use-Model-to-Deconstruct-Threats-Detect-Intrusion-by-Statistical-Learning-FINAL.pdf)【阿里，RSA 2019】
+
+【课程】[网络异常行为分析](https://www.aqniukt.com/goods/show/163?targetId=353&preview=0)
+
+【课程】[加密威胁事件检测与响应实践](https://www.aqniukt.com/goods/show/428?targetId=11731&preview=0)
+
+【webshell,污点传播理论】[洋葱webshell检测实践与思考](https://www.freebuf.com/articles/system/238691.html)
+
+#### 2021.5.6
+
+【malware】[SIGL: Securing Software Installations Through Deep Graph Learning](https://www.usenix.org/system/files/sec21summer_han-xueyuan.pdf)`待更新`【unisex,2020】
+
+【theory】[CADE: Detecting and Explaining Concept Drift Samples for Security Applications](https://www.usenix.org/conference/usenixsecurity21/presentation/yang-limin)`待更新`【unisex,2020】
+
+【email】[Weak Links in Authentication Chains: A Large-scale Analysis of Email Sender Spoofing Attacks]()`待更新`【清华，usenix,2020】
+
+【IDS】[ATLAS: A Sequence-based Learning Approach for Attack Investigation]()`待更新`【】
+
+【IDS】[Defeating DNN-Based Traffic Analysis Systems in Real-Time With Blind Adversarial Perturbations](https://www.usenix.org/conference/usenixsecurity21/presentation/nasr)s
+
 #### 2021.4.30
 
 【IDS】[Use Model to Deconstruct Threats: Detect Intrusion by Statistical Learning](AI_to_Sec/AI_to_defense/Web/AI_IDS.md) 【RSA 2019】
 
-【IDS】[MADE: Security Analytics for Enterprise Threat Detection](AI_to_Sec/AI_to_defense/Web/AI_IDS.md)`待更新`
+【IDS】[MADE: Security Analytics for Enterprise Threat Detection](AI_to_Sec/AI_to_defense/Web/AI_IDS.md)
 
 #### 2021.4.8
 

@@ -37,7 +37,15 @@
 
    代表：[DL_for_xss](https://github.com/SparkSharly/DL_for_xss)
 
+
+
+2. #### char->ascii+深度学习
+
+   &emsp;&emsp;这种方式建模首先将字符串转化为对应的ascii码值，然后使用深度学习模型来进行特征提取，这里一般使用CNN系列模型效果会比较好，因为XSS中更多的表现在局部。
+
    
+
+
 
 
 
