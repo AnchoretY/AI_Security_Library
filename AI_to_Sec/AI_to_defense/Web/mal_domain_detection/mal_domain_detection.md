@@ -64,14 +64,36 @@ DBDNS
 
 ### Paper&Blog
 
-1. Hyrum S. Anderson, Jonathan Woodbridge, Bobby Filar. "DeepDGA: Adversarially-Tuned Domain Generation and Detection" [[pdf\]](https://arxiv.org/abs/1610.01969),6 Oct 2016 **(生成对抗网络，DGA检测)** 
-2. Jonathan Woodbridge, Hyrum S. Anderson, Anjum Ahuja, Daniel Grant. "Predicting Domain Generation Algorithms with Long Short-Term Memory Networks" [[pdf\]](https://arxiv.org/abs/1611.00791),2 Nov 2016 **(LSTM,DGA检测)**
+1. Hyrum S. Anderson, Jonathan Woodbridge, Bobby Filar. "**DeepDGA: Adversarially-Tuned Domain Generation and Detection**" [[pdf\]](https://arxiv.org/abs/1610.01969),6 Oct 2016 **(生成对抗网络，DGA检测)** 
+
+   这篇论文是首个尝试使用生成对抗网络与自动编码器来生成DGA域名的方案，其中各部分的工作方式与作用分别为：
+
+   - auto-encoder
+     - 使用Alexa top 1m中的正常域名作为训练集对自动编码器进行训练，使其能够学习到正常模型的embedding表达方式。
+     - encoder：输入域名，其能够输出符合正常域名字节分布规律的embedding表示
+     - decoder：输入符合正常域名分布规律的embedding，解码为域名
+   - GAN
+     - 将训练好的encoder和decoder固定权重后分别接generator layer和logistic regression，作为GAN的生成器与判别器，训练时只对新加入的generator layer和logistic regression进行训练
+     - 生成器：输入随机种子，generator layer生成与正常域名相似的embedding，然后由decoder负责还原成DGA域名（与征程域名相似的）
+     - 判别器：输入域名，使用encoder将域名转化为embedding表示，然后使用lr判断是不是真正的正常域名。
+
+   论文的整体思路比较新颖，但是**实际使用使要考虑深度学习模型训练过程中的随机性问题，DGA域名要求使用同一种子，多次复现过程中生成的域名必须要是相同的**。
+
+![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.26e2wvgbpzw.png)![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.kme5vw2r0p.png)
+
+
+
+2. Jonathan Woodbridge, Hyrum S. Anderson, Anjum Ahuja, Daniel Grant. "**Predicting Domain Generation Algorithms with Long Short-Term Memory Networks**" [[pdf\]](https://arxiv.org/abs/1611.00791),2 Nov 2016 **(LSTM,DGA检测)**
+
 3. Manos Antonakakis, Damballa Inc. and Georgia Institute of Technology.  "[From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware](https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final127.pdf)",2012. **(DGA,图，谱聚类)**
 
 ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.9ylsao9hy4l.png)
 
-4. Khalil, I., Yu, T., & Guan, B. (2016). [Discovering Malicious Domains through Passive DNS Data Graph Analysis](sci-hub.se/10.1145/2897845.2897877). Proceedings of the 11th ACM on Asia Conference on Computer and Communications Security - ASIA CCS ’16.
+4. Khalil, I., Yu, T., & Guan, B. (2016). **[Discovering Malicious Domains through Passive DNS Data Graph Analysis](sci-hub.se/10.1145/2897845.2897877).** Proceedings of the 11th ACM on Asia Conference on Computer and Communications Security - ASIA CCS ’16.
 ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.0jr8nz4x4pe.png)
+
+
+
 ### Blog
 
 #### 1. [机器学习与威胁情报的融合：一种基于AI检测恶意域名的方法](https://www.freebuf.com/articles/es/187451.html)
@@ -102,5 +124,4 @@ DBDNS
 
 
 #### 5. [DNS安全皮毛](https://xz.aliyun.com/t/5991)
-
 
