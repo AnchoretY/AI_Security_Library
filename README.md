@@ -9,7 +9,7 @@
 #### AI赋能安全
 
 1. AI辅助防御
-   - [Web入侵检测](./AI_to_Sec/AI_to_defense/Web/AI_IDS.md)
+   - [AI IDS](./AI_to_Sec/AI_to_defense/Web/AI_IDS.md)
      - [Webshell检测](./AI_to_Sec/AI_to_defense/Web/webshell.md)
      - [XSS检测](./AI_to_Sec/AI_to_defense/Web/XSS.md)
      - 恶意域名检测
@@ -41,6 +41,14 @@
    
 
 ## 近期更新
+
+#### 2021.8.24
+
+【恶意软件检测】Malware Detection by Eating a Whole EXE【AAAI workshop, 2018】
+
+【恶意软件检测】HYDRA- A Multimodal Deep Learning Framework for Malware Classification`待更新`【2020】
+
+【恶意软件检测】Zero-day malware detection using transferred generative adversarial networks based on deep autoencoders`待更新`【Information Sciences，2018】
 
 #### 2021.5.12
 

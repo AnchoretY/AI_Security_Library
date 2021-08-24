@@ -77,7 +77,7 @@ DBDNS
      - 生成器：输入随机种子，generator layer生成与正常域名相似的embedding，然后由decoder负责还原成DGA域名（与征程域名相似的）
      - 判别器：输入域名，使用encoder将域名转化为embedding表示，然后使用lr判断是不是真正的正常域名。
 
-   论文的整体思路比较新颖，但是**实际使用使要考虑深度学习模型训练过程中的随机性问题，DGA域名要求使用同一种子，多次复现过程中生成的域名必须要是相同的**。
+   论文的整体思路比较新颖，**核心思路是通过控制生成DGA域名的字符分布更加趋近于正常域名的分布从而逃过检测**，实验环境下，可使随机森林检测模型对该种DGA域名的检出率不到50%，但是**实际使用使要考虑深度学习模型训练过程中的随机性问题，DGA域名要求使用同一种子，多次复现过程中生成的域名必须要是相同的**。
 
 <img src="https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.26e2wvgbpzw.png" alt="image" style="zoom:80%;" /><img src="https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.kme5vw2r0p.png" alt="image" style="zoom:80%;" />
 
