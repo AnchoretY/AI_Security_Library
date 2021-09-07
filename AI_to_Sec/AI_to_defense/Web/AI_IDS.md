@@ -9,7 +9,18 @@
 
    标准入侵检测的发展、意义、评价指标、关键技术、检测框架、代表应用等。
 
-   
+
+
+
+### 工具
+
+1. #### [CICFlowMeter](https://gitlab.com/hieulw/cicflowmeter)
+
+   ​	CICflowmeter是一款流量特征提取工具，该工具输入pcap文件，输出pcap文件中包含的数据包的特征信息，共80多维，以csv表格的形式输出。具备java和python两个版本，python版本可以直接通过`pip install cicflowmeter`进行安装。该工具提取的都是传输层的一些统计信息，且特征均区分正向以及反向，以一个TCP流或一个UDP流为一个单位。TCP流以FIN标志为结束，UDP以设置的flowtimeout时间为限制，超过时间就判为结束。
+
+   ​	具体工作原理如下：
+
+   ​	**从pcap文件中逐个读取packet，将每个数据包添加到对应的流中在currentFlows存储当前还未结束得所有TCP、UDP流**。在添加的过程中不断地更新每个流的统计特征，最终将统计特征写入csv文件。判断新加入的数据包是否属于当前所有未结束的流，如果属于当前流则判断正向还是反向，之后判断时间是否超时、不超时则判断是否含有FIN标志，如果两者都不满足，则声明一个BasicFlow对象，根据id从currentFlows中拿到与当前数据包对应的流，调用addPacket将该数据包加入到对应流中。如果前面判断不在当前所有未结束的流中，则直接创建一个新得流，里面只含当前数据包，存入到currentFlows中。如果属于当前某个未结束的流，且超时或存在FIN标志，则说明当前flow结束，超时则从currentFlows中移除对应流，新建flow存入currentFlows中，含FIN标志则直接从currentFlows中移除对应流。结束的flow直接调用onFlowGenerated函数将流打印存储起来。
 
 ### 项目
 
@@ -29,7 +40,21 @@
 
 2. #### [KDD CUP 1999 Data]()
 
-3. #### [SecRepo.com](https://www.secrepo.com/)
+   
+
+3. #### [CIC IDS 2012、2017、2018](https://www.unb.ca/cic/datasets/ids-2018.html)
+
+   ​	该数据集来自加拿大新不伦瑞克大学的加拿大网络安全研究所，与前面的入侵检测数据集最大的不同点在于该数据集改变了原有的静态数据集一次检测的方式转变为动态生成一段时间内每天的动态数据，IDS 2012数据集中只包含原始pcap数据，从2017开始还包含了使用提出的特征生成工具CICFlower。
+
+   | 数据集       | 攻击类型                                                     |      |
+   | ------------ | ------------------------------------------------------------ | ---- |
+   | CIC IDS 2012 | 内部渗透、HTTP Dos、Ddos、SSH爆破                            | 98G  |
+   | CIC IDS 2017 | 常见Dos(DoS slowloris、DoS Slowhttptest、DoS Hulk、DoS GoldenEye)、Web攻击(暴力破解、XSS、SQL注入)、渗透(Dropbox下载、Portscan + Nmap)、僵尸网络、端口扫描、DDos | 55G  |
+   | CIC IDS 2018 | 常见Dos(Slowloris、Slowhttptest、Hulk、GoldenEye、心脏滴血)、Web攻击（DVWA、XSS和暴力破解）、渗透（Dropbox下载、Portscan + Nmap）、僵尸网络（ARES：远程shell、上传下载、屏幕捕获、登录秘钥窃取）、DDoS+PortScan | 298G |
+
+   
+
+4. #### [SecRepo.com](https://www.secrepo.com/)
 
 &emsp;&emsp;一个总结各种与安全数据相关的数据集的网站。**数据格式也非常多样**。
 

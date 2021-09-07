@@ -42,6 +42,14 @@
 
 ## 近期更新
 
+#### 2021.9.7
+
+【攻击WAF】Deep X-Ray- 一种机器学习驱动的WAF规则窃取器 [视频](https://cis.freebuf.com/?id=11)【腾讯朱雀实验室,2020,ppt】
+
+【僵尸网络检测】基于图数据的云上BOT团伙深度感知【阿里云，2019】
+
+【WAF】解密云环境下WAF的攻防对抗 [视频](https://cis.freebuf.com/?id=78)
+
 #### 2021.8.24
 
 【恶意软件检测】Malware Detection by Eating a Whole EXE【AAAI workshop, 2018】
