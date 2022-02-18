@@ -30,17 +30,33 @@
 
 #### AI自身的安全问题
 
-1. 对抗攻击
+1. 自动驾驶安全
+2. 对抗攻击
+3. 后门攻击
+4. 数据投毒
+5. 模型窃取
 
-2. 后门攻击
 
-3. 数据投毒
 
-4. 模型窃取
+### 
 
-   
+
+
+ 
 
 ## 近期更新
+
+#### 2022.2.16
+
+【DGA，攻击AI检测系统】CharBot: A Simple and Effective Method for Evading DGA Classifiers
+
+【DGA，攻击AI检测系统】MaskDGA: A Black-box Evasion Technique Against DGA Classifiers and Adversarial Defenses
+
+
+
+#### 2021.12.13
+
+【自动驾驶安全】Evaluating Adversarial Attacks on Driving Safety in Vision-Based Autonomous Vehicles
 
 #### 2021.9.7
 
