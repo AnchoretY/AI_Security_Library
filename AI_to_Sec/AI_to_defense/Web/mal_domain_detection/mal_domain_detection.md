@@ -2,6 +2,16 @@
 
 优势：可以避免被防火墙硬编码式直接封禁
 
+一般流程：种子+若干移位操作
+
+~~~
+种子：种子可以使任何在不断变化的伪随机输入数值。常见的种子有日期、汇率等。
+
+伪随机类DGA详细生成流程可以参考这篇文章：[A Death Match of Domain Generation Algorithms](https://medium.com/@yvyuz/a-death-match-of-domain-generation-algorithms-a5b5dbdc1c6e)
+~~~
+
+
+
 ### 分类
 
 DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
@@ -18,7 +28,9 @@ DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
 
 攻击者会在DGA域名生成的众多域名中注册少数域名，将其对应的IP地址设置为C2服务器地址，受控僵尸机会对DGA域名生成算法生成的全部域名进行请求，大部分域名由于没有真的被注册，因此会返回NXdomain，当僵尸主机访问到被注册的DGA域名时，DNS服务器将返回C2地址，然后，僵尸机即可连接到C2服务器。
 
-<img src="/Users/yhk/Library/Application Support/typora-user-images/image-20211220201223081.png" alt="image-20211220201223081" style="zoom:50%;" />
+![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.dbnbgwf0oe.png)
+
+
 
 
 
@@ -77,33 +89,15 @@ DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
 
 #### 3. DNS流量共现特征模型
 
-核心思想：同一家族的DGA域名会在一段时间内共同发起类似的DNS请求，因此对同一时间段内的域名发起的IP地址做统计，以及运算
+**核心思路**：同一家族的DGA域名会在一段时间内共同发起类似的DNS请求，因此对同一时间段内的域名发起的IP地址做统计，使用矩阵相乘获得域名被多少IP地址访问，然后将矩阵关系转化为图：将存在大于N个共同发起访问的IP连接边，然后使用Louvain算法进行聚类，最后找出符合DGA的类。
 
-- 《A DGA Odyssey PDNS Driven DGA Analysis》
+**代表工作**：《A DGA Odyssey PDNS Driven DGA Analysis》
 
 
 
 ![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.0suzyes3jy.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-### 存在的问题
-
-
-
-
-
-
+![image](https://raw.githubusercontent.com/AnchoretY/images/master/blog/image.y6zoea1p83f.png)
 
 ### URL DataSet
 
@@ -175,7 +169,7 @@ DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
 >
 > 2. FQDN
 >
-> &emsp;&emsp;域名有全称和简称的区别。全称的域名，直译为"完全的合格的域名"(FQDN，Fully Qualified Domain Name)，表现为由"·"隔开的点分式层次结构，叫名称空间， 它指定了一台主机和它所属域的隶属关系，而简称通常就是这台主机的计算机名，在域名的最左边。`FQDN(完全合格的域名)，是域加计算机名的总称`。比如: www.microsoft.com 这个FQDN 中，www 是主机名，microsoft.com 是域。 www+microsoft.com 组合在一块就成了一个完整的域名(FQDN)。可以通过分析一定时间窗口内所产生的FQDN数，`通常DNS Tunneling的FQDN数在一定时间窗口内会远高于正常的DNS流量`。
+> &emsp;&emsp;域名有全称和简称的区别。全称的域名，直译为"完全的合格的域名"(FQDN，Fully Qualified Domain Name)，表现为由"·"隔开的点分式层次结构，叫名称空间， 它指定了一台主机和它所属域的隶属关系，而简称通常就是这台主机的计算机名，在域名的最左边。`FQDN(完全合格的域名)，是域加计算机名的总称`。比如: www.microsoft.com 这个FQDN 中，www 是主机名，microsoft.com 是域。 www.microsoft.com 组合在一块就成了一个完整的域名(FQDN)。可以通过分析一定时间窗口内所产生的FQDN数，`通常DNS Tunneling的FQDN数在一定时间窗口内会远高于正常的DNS流量`。
 
 #### 3. [图/Louvain/DGA乱谈](https://www.cdxy.me/?p=805)
 
