@@ -6,11 +6,9 @@
 
 ~~~
 种子：种子可以使任何在不断变化的伪随机输入数值。常见的种子有日期、汇率等。
-
-伪随机类DGA详细生成流程可以参考这篇文章：[A Death Match of Domain Generation Algorithms](https://medium.com/@yvyuz/a-death-match-of-domain-generation-algorithms-a5b5dbdc1c6e)
 ~~~
 
-
+伪随机类DGA详细生成流程可以参考这篇文章：[A Death Match of Domain Generation Algorithms](https://medium.com/@yvyuz/a-death-match-of-domain-generation-algorithms-a5b5dbdc1c6e)
 
 ### 分类
 
@@ -18,11 +16,11 @@ DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
 
 非字典型域名主要采用各种编码方式使域名变得非常随机化，检测主要从DGA域名与正常域名的随机性差别进行检测；
 
-<img src="/Users/yhk/Library/Application Support/typora-user-images/image-20211220202712401.png" alt="image-20211220202712401" style="zoom:60%;" />
+![image-20221122153735277](images/image-20221122153735277.png)
 
 字典型DGA域名由一个字典的随机组合生成DGA域名，这种域名单个拿出来与正常域名在域名字符上表现差别不大，但对于主机请求的大量域名的分析还是会发现与正常域名的不同之处，一般从图角度进行分析。
 
-<img src="/Users/yhk/Library/Application Support/typora-user-images/image-20211220201419031.png" alt="image-20211220201419031" style="zoom:33%;" />
+![image-20221122153801134](images/image-20221122153801134.png)
 
 ### 工作原理
 
@@ -32,9 +30,7 @@ DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
 
 
 
-
-
-<img src="/Users/yhk/Library/Application Support/typora-user-images/image-20211220201242971.png" alt="image-20211220201242971" style="zoom:50%;" />
+![image-20221122153853263](images/image-20221122153853263.png)
 
 ### 检测思路
 
@@ -76,9 +72,11 @@ DGA从大体上上可以分为字典型DGA与非字典型DGA两种。
 
 #### 2. DNS流量序列特征模型
 
+**事实依据**：由于通过DGA生成算法生成的DGA域名都会进行发送请求，因此会出现一个存在较强关联的DNS域名查询序列，而这个DNS查询序列中又存在大量不存在的域名，因此其中的大量域名都会返回NXDOMAIN
+
 **核心思路**：对每个IP地址的DNS域名查询序列取滑动窗口，对其中出现的域名以word2vec的方式做向量表示，然后利用分类或聚类模型找出符合DGA网络行为的域名（例如大量查询NXDOMAIN）。
 
-<img src="/Users/yhk/Library/Application Support/typora-user-images/image-20220217112134628.png" alt="image-20220217112134628" style="zoom:40%;" />
+![image-20221122154049447](images/image-20221122154049447.png)
 
 代表工作：
 
